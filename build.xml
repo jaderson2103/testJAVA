@@ -26,4 +26,7 @@
 			</batchtest>
 		</junit>
 	</target>
+	<target name="jar" depends="test">
+		<jar destfile="target/jenkins.jar" basedir="test/jenkins/" />
+	</target>
 </project>
