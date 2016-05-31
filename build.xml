@@ -1,4 +1,4 @@
-<project name="Projecto de exemplo para build no jenkins">
+<project name="Teste Unitario">
 	
 	<path id="tests.classpath" path=".">
 		<fileset dir="lib/">
@@ -25,8 +25,5 @@
 				</fileset>
 			</batchtest>
 		</junit>
-	</target>
-	<target name="CriandoArtefatos" depends="Testando">
-		<jar destfile="target/jenkins.jar" basedir="test/jenkins/"  encoding="UTF-8"  />
 	</target>
 </project>
