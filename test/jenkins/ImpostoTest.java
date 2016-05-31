@@ -11,13 +11,14 @@
  
 package jenkins;
 
+/** importando os metodos de suas classes */
 import jenkins.Imposto;
 import jenkins.Orcamento;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class ImpostoTest {
-    @Test
+    
     public void CalculaImpostoDeDezPorcento() {
         Orcamento orcamento = new Orcamento(100.0);
         Imposto imposto = new Imposto();
