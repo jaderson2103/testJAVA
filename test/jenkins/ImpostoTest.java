@@ -19,7 +19,7 @@ import org.junit.Test;
 
 public class ImpostoTest {
     
-    @TEST
+     @Test
     
     public void CalculaImpostoDeDezPorcento() {
         Orcamento orcamento = new Orcamento(100.0);
