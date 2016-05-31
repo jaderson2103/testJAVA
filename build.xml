@@ -27,6 +27,6 @@
 		</junit>
 	</target>
 	<target name="CriandoArtefatos" depends="Testando">
-		<jar destfile="target/jenkins.jar" basedir="test/jenkins/" />
+		<jar destfile="target/jenkins.jar" basedir="test/jenkins/"  encoding="UTF-8"  />
 	</target>
 </project>
