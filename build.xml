@@ -7,14 +7,14 @@
 		<pathelement path="target/classes/" />
 	</path>
 	
-	<target name="compile">
+	<target name="compilando">
 		<mkdir dir="src/jenkins/"/>
 		<mkdir dir="target/classes-test/"/>
 		<javac destdir="target/classes/" srcdir="src/jenkins/" debug="true" encoding="UTF-8" />
 		<javac destdir="test/jenkins/" srcdir="test/jenkins/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
-	<target name="test" depends="compile">
+	<target name="test" depends="compilando">
 		<junit fork="yes" forkmode="once"  printsummary="true" showoutput="true" failureproperty="failed-test" haltonfailure="true" >
 			<formatter type="plain" usefile="false" />
 			<classpath location="test/jenkins/" />
