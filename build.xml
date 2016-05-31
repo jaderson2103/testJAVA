@@ -4,7 +4,7 @@
 		<fileset dir="lib/">
 			<include name="*.jar" />
 		</fileset>
-		<pathelement path="target/classes/" />
+		<pathelement path="src/jenkins/" />
 	</path>
 	
 	<target name="Compilando">
