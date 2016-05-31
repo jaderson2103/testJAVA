@@ -14,7 +14,7 @@
 		<javac destdir="test/jenkins/" srcdir="test/jenkins/" classpathref="tests.classpath" debug="true" includeantruntime="false"  encoding="UTF-8" />
 	</target>
 	
-	<target name="Testando" depends="Compilando">
+	<target name="Tesando" depends="Compilando">
 		<junit fork="yes" forkmode="once"  printsummary="true" showoutput="true" failureproperty="failed-test" haltonfailure="true" >
 			<formatter type="plain" usefile="false" />
 			<classpath location="test/jenkins/" />
