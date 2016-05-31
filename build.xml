@@ -10,8 +10,8 @@
 	<target name="Compilando">
 		<mkdir dir="src/jenkins/"/>
 		<mkdir dir="test/jenkins/"/>
-		<javac destdir="src/jenkins/" srcdir="src/jenkins/" debug="true" encoding="UTF-8" />
-		<javac destdir="test/jenkins/" srcdir="test/jenkins/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
+		<javac destdir="src/jenkins/" srcdir="src/jenkins/" debug="true" includeantruntime="false"  encoding="UTF-8" />
+		<javac destdir="test/jenkins/" srcdir="test/jenkins/" classpathref="tests.classpath" debug="true" includeantruntime="false"  encoding="UTF-8" />
 	</target>
 	
 	<target name="Testando" depends="Compilando">
